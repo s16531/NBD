@@ -1,0 +1,22 @@
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("273e9e7f-251f-497f-8abf-d5d11e846d27") }
+MongoDB server version: 5.0.6
+{ "acknowledged" : true, "deletedCount" : 0 }
+uncaught exception: TypeError: printjson(...) is undefined :
+@zapytanie_7.js:1:1
+failed to load: zapytanie_7.js
+exiting with code -3
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("1699ee4a-cb96-45ce-a139-da8ba59270de") }
+MongoDB server version: 5.0.6
+uncaught exception: TypeError: db.people.deleteMany(...).toArray is not a function :
+@zapytanie_7.js:1:11
+failed to load: zapytanie_7.js
+exiting with code -3
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("21cb5636-1c01-473b-95f8-8318308a5f66") }
+MongoDB server version: 5.0.6
+{ "acknowledged" : true, "deletedCount" : 0 }

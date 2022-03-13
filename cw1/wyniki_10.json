@@ -1,0 +1,55 @@
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("9aa6541b-dccf-4ad3-a5a5-ccaad5195e3f") }
+MongoDB server version: 5.0.6
+WriteError({
+	"index" : 0,
+	"code" : 9,
+	"errmsg" : "Modifiers operate on fields but we found type string instead. For example: {$mod: {<field>: ...}} not {$unset: \"email\"}",
+	"op" : {
+		"q" : {
+			"job" : "Editor"
+		},
+		"u" : {
+			"$unset" : "email"
+		},
+		"multi" : true,
+		"upsert" : false
+	}
+}) :
+WriteError({
+	"index" : 0,
+	"code" : 9,
+	"errmsg" : "Modifiers operate on fields but we found type string instead. For example: {$mod: {<field>: ...}} not {$unset: \"email\"}",
+	"op" : {
+		"q" : {
+			"job" : "Editor"
+		},
+		"u" : {
+			"$unset" : "email"
+		},
+		"multi" : true,
+		"upsert" : false
+	}
+})
+WriteError@src/mongo/shell/bulk_api.js:465:48
+mergeBatchResults@src/mongo/shell/bulk_api.js:871:49
+executeBatch@src/mongo/shell/bulk_api.js:940:13
+Bulk/this.execute@src/mongo/shell/bulk_api.js:1182:21
+DBCollection.prototype.updateMany@src/mongo/shell/crud_api.js:690:17
+@zapytanie_10.js:1:11
+failed to load: zapytanie_10.js
+exiting with code -3
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("02fc62f1-864d-4dd9-b72e-046c7b7ab109") }
+MongoDB server version: 5.0.6
+uncaught exception: ReferenceError: email is not defined :
+@zapytanie_10.js:1:51
+failed to load: zapytanie_10.js
+exiting with code -3
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("96e019de-c9fd-4c96-8a34-46780f23904e") }
+MongoDB server version: 5.0.6
+{ "acknowledged" : true, "matchedCount" : 86, "modifiedCount" : 86 }
