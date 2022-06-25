@@ -1,0 +1,29 @@
+Stwozrenie Klienta Riak
+
+
+
+Stwozrenie obiektu Automotive
+Automotive{modelName='Berlingo', brandName='Citroen', engineCapacity=2000, isHybrid=true}
+
+
+
+Zapisanie pierwszego obiektu Automotive do bucketu
+
+
+ Pobrany obiekt automotive : 
+Automotive{modelName='Berlingo', brandName='Citroen', engineCapacity=2000, isHybrid=true}
+
+
+
+
+
+
+Aktualizacja obiektu w bucket
+
+Response :  {location: {namespace: {type: default, bucket: automotives}, key: Citroen}, values: []}
+
+
+
+Usunięcie Obiektu automotive
+Próba pobrania po usunięciu, rezultat : 
+ null

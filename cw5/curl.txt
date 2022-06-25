@@ -1,0 +1,105 @@
+//wykonywane na ubuntu 20.04
+
+1.
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/vw' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"VW",
+    "modelName":"Golf",
+    "engineCapacity":1005,
+    "isHybrid":true
+}'
+
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/skoda' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Skoda",
+    "modelName":"Octavia",
+    "engineCapacity":1995,
+    "isHybrid":false
+}'
+
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/honda' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Honda",
+    "modelName":"Civic",
+    "engineCapacity":1300,
+    "isHybrid":false
+}'
+
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/toyota' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Toyota",
+    "modelName":"Corolla",
+    "engineCapacity":1300,
+    "isHybrid":true
+}'
+
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/audi' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Audi",
+    "modelName":"A2",
+    "engineCapacity":900,
+    "isHybrid":false
+}'
+
+2.
+curl --location -i --request GET 'http://localhost:8098/buckets/s16531/keys/audi'
+
+3.
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/skoda' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Skoda",
+    "modelName":"Octavia",
+    "engineCapacity":1995,
+    "isHybrid":false,
+    "doors":5
+}'
+
+4.
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/skoda' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Skoda",
+    "modelName":"Octavia",
+    "engineCapacity":1995,
+    "isHybrid":false
+}'
+
+5.
+curl --location -i --request PUT 'http://localhost:8098/buckets/s16531/keys/skoda' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Skoda",
+    "modelName":"Octavia",
+    "engineCapacity":1995,
+    "isHybrid":true
+}'
+
+6.
+curl --location -i --request DELETE 'http://localhost:8098/buckets/s16531/keys/skoda'
+
+7. 
+curl --location -i --request GET 'http://localhost:8098/buckets/s16531/keys/skoda'
+
+8.
+curl --location -i --request POST 'http://localhost:8098/buckets/s16531/keys/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "brandName":"Suzuki",
+    "modelName":"Swift",
+    "engineCapacity":1305,
+    "isHybrid":false
+}'
+
+9.
+curl --location -i --request GET 'http://localhost:8098/buckets/s16531/keys?keys=true'
+curl --location -i --request GET 'http://localhost:8098/buckets/s16531/keys/Joqpe0fVilTCXg8EQUQG13RcfB0'
+
+10.
+curl --location -i --request DELETE 'http://localhost:8098/buckets/s16531/keys/Joqpe0fVilTCXg8EQUQG13RcfB0'
+

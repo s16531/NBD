@@ -1,0 +1,42 @@
+1.
+MATCH (movies:Movie) RETURN movies
+
+2.
+MATCH (movie:Movie)<--(:Person {name: 'Hugo Weaving'}) RETURN distinct movie
+
+3.
+MATCH (:Person{name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie: Movie) <-[:DIRECTED]- (director: Person) RETURN distinct director;
+
+4. 
+MATCH (:Person{name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie: Movie) <-[:ACTED_IN]- (actor: Person) RETURN distinct actor;
+
+5. 
+MATCH (movies:Movie)<-[:ACTED_IN]-(actor:Person) WHERE (actor:Person)-[:ACTED_IN]->(:Movie { title: "The Matrix" }) RETURN distinct movies.title
+
+6.
+MATCH (:Person{name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie: Movie) MATCH (actor: Person) -[:ACTED_IN]-> (movie: Movie) RETURN actor as aktor, count(*) as ilosc_filmow;
+
+7.
+MATCH (director:Person)-[:DIRECTED]->(movie:Movie)<-[:WROTE]-(write:Person) WHERE director = writer RETURN distinct director.name,  movie.title
+
+8.
+MATCH (:Person{name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie: Movie) MATCH (:Person{name: "Keanu Reeves"}) -[:ACTED_IN]-> (movie: Movie) RETURN distinct movie.title;
+
+9.
+CREATE (captainAmerica :Movie {title:'Captain America: The First Avenge', released:2011, tagline:'The first Avenger'})
+MERGE (Christopher: Person{name: "Christopher Markus", born: 1970})
+CREATE (Christopher) -[:WROTE]-> (captainAmerica)
+MERGE (Joe: Person{name: "Joe Johnston", born: 1950})
+CREATE (Joe) -[:DIRECTED]-> (captainAmerica)
+MERGE (Hayley: Person{name: "Hayley Atwell", born: 1982})
+CREATE (Hayley) -[:ACTED_IN]-> (captainAmerica)
+MERGE (Hugo: Person{name: "Hugo Weaving", born: 1960})
+CREATE (Hugo) -[:ACTED_IN]-> (captainAmerica)
+MERGE (Tommy: Person{name: "Tommy Lee Jones", born: 1946})
+CREATE (Tommy) -[:ACTED_IN]-> (captainAmerica)
+MERGE (Sebastian: Person{name: "Sebastian Stan", born: 1982})
+CREATE (Sebastian) -[:ACTED_IN]-> (captainAmerica)
+MERGE (Chris: Person{name: "Chris Evans", born: 1981})
+CREATE (Chris) -[:ACTED_IN]-> (captainAmerica)
+RETURN captainAmerica,Joe, Hugo, Sebastian, Tommy, Hayley, Chris, Christopher;
+

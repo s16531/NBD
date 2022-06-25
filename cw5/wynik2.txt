@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvvfcdGYlkM2cwZTImMfKsCdH+w5fFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s16531>; rel="up"
+Last-Modified: Sat, 25 Jun 2022 11:25:48 GMT
+ETag: "7TRAtKqOvBCiupzNkvWc8"
+Date: Sat, 25 Jun 2022 11:27:38 GMT
+Content-Type: application/json
+Content-Length: 96
+
+{
+    "brandName":"Audi",
+    "modelName":"A2",
+    "engineCapacity":900,
+    "isHybrid":false
+}%

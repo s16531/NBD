@@ -1,0 +1,170 @@
+{
+    "identity": 686,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1950,
+  "name": "Joe Johnston"
+    }
+  }
+  {
+    "identity": 108,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Tom Tykwer"
+    }
+  }
+  {
+    "identity": 6,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Lana Wachowski"
+    }
+  }
+  {
+    "identity": 5,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "Lilly Wachowski"
+    }
+  }
+  {
+    "identity": 25,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "James Marshall"
+    }
+  }
+  {
+    "identity": 196,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "James Marshall"
+    }
+  }
+  {
+    "identity": 176,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "Lilly Wachowski"
+    }
+  }
+  {
+    "identity": 177,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Lana Wachowski"
+    }
+  }
+  {
+    "identity": 279,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Tom Tykwer"
+    }
+  }
+  {
+    "identity": 347,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "Lilly Wachowski"
+    }
+  }
+  {
+    "identity": 348,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Lana Wachowski"
+    }
+  }
+  {
+    "identity": 450,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Tom Tykwer"
+    }
+  }
+  {
+    "identity": 367,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "James Marshall"
+    }
+  }
+  {
+    "identity": 519,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Lana Wachowski"
+    }
+  }
+  {
+    "identity": 518,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "Lilly Wachowski"
+    }
+  }
+  {
+    "identity": 621,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1965,
+  "name": "Tom Tykwer"
+    }
+  }
+  {
+    "identity": 538,
+    "labels": [
+      "Person"
+    ],
+    "properties": {
+  "born": 1967,
+  "name": "James Marshall"
+    }
+  }

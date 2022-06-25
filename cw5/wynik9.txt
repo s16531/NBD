@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 25 Jun 2022 11:33:06 GMT
+Content-Type: application/json
+Content-Length: 69
+
+{"keys":["Joqpe0fVilTCXg8EQUQG13RcfB0","honda","toyota","vw","audi"]}%
+
+
+
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvvfc0rUOIpTImMfK4JenfYcvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s16531>; rel="up"
+Last-Modified: Sat, 25 Jun 2022 11:32:30 GMT
+ETag: "2CgLyRXVakEpqIeE5l2h1Y"
+Date: Sat, 25 Jun 2022 11:34:00 GMT
+Content-Type: application/json
+Content-Length: 102
+
+{
+    "brandName":"Suzuki",
+    "modelName":"Swift",
+    "engineCapacity":1305,
+    "isHybrid":false
+}%
+

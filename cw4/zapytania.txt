@@ -1,0 +1,36 @@
+1. 
+MATCH shortestPaths = ALLSHORTESTPATHS(({name: "Darjeeling"}) -[*]-> ({name: "Sandakphu"})) 
+RETURN shortestPaths;
+
+2.
+MATCH winterPath = ALLSHORTESTPATHS(({name: "Darjeeling"}) -[*]-> ({name: "Sandakphu"})) 
+WHERE ALL (condition in relationships(winterPath) where condition.winter = "true")  
+RETURN winterPath
+
+3.
+MATCH shortest = ({name: "Darjeeling"}) -[*]-> ({name: "Sandakphu"}) 
+RETURN shortest, LENGTH(shortest) ORDER BY LENGTH(shortest);
+
+4.
+MATCH path = ({name: "Darjeeling"}) -[mean:twowheeler*]-> () 
+WHERE ALL (mean IN relationships(path) WHERE mean.summer = "true")  
+RETURN path;
+
+5.
+MATCH (:Flight)-[:ORIGIN]->(airport:Airport) 
+RETURN airport,
+COUNT(*) AS quantity 
+ORDER BY quantity DESC;
+
+6. //EMPTY RESPONSE, NO WYNIK.SVG AND WYNIK.JSON
+MATCH prices = (source:Airport{name:'LAX'})-[c:CONN*1..3]->(destination:Airport{name:'DAY'}) WITH *, reduce (s = 0, x IN relationships(prices) | s + x.price) 
+AS price RETURN prices, 
+price ORDER BY price DESC;
+
+7. //EMPTY RESPONSE, NO WYNIK.SVG AND WYNIK.JSON
+MATCH prices = (source:Airport{name:'LAX'})-[c:CONN*1..3]->(destination:Airport{name:'DAY'}) WITH *, reduce (s = 0, x IN relationships(prices) | s + x.price) 
+AS price RETURN prices, 
+price ORDER BY price ASC 
+limit 1
+
+8. 
