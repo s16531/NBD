@@ -11,4 +11,5 @@ db.people.mapReduce(
     }
 )
 
-printjson(db.map_reduce_3.find().sort({ _id: 1 }).toArray())
+printjson(db.map_reduce_zapytanie_3.find().sort({ _id: 1 }).toArray())
+

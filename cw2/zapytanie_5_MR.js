@@ -1,3 +1,4 @@
+// niestety nie wiem dlaczego wykonanie 
 var mapFunction = function() {
     this.credit.forEach(e => {
         emit(e.currency, {
@@ -39,4 +40,4 @@ db.people.mapReduce(
     }
 )
 
-printjson(db.map_reduce_5.find().sort({ _id: 1 }).toArray())
+printjson(db.map_reduce_zapytanie_5.find().sort({ _id: 1 }).toArray())

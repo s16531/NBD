@@ -1,4 +1,4 @@
-printJson(db.people.aggregate({
+printjson(db.people.aggregate({
     "$group": {
         _id: "$sex",
         averageWeight: { $avg: { $toDouble: "$weight" } },
